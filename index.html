@@ -101,7 +101,7 @@
         <div class="texto-banner">
           <h2>Siempre Innovando</h2>
           <h1>Digital Sales Group</h1>
-          <a href="#" class="scroll-suave">VER PROYECTOS</a>
+          <a href="#proyectos" class="scroll-suave">VER PROYECTOS</a>
         </div>
       </section>
 
@@ -313,7 +313,7 @@
       >
         <div class="contenedor">
           <div class="contenedor-formulario">
-            <div class="formulario">
+            <div class="formulario" id="formulario">
               <h2>Cuéntanos sobre tu proyecto</h2>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed,
@@ -321,20 +321,30 @@
               </p>
               <form>
                 <div>
-                  <input type="text" name="nombre" placeholder="Nombre" />
+                  <input
+                    type="text"
+                    name="nombre"
+                    placeholder="Nombre"
+                    id="nombre"
+                  />
+                  <p class="error">Por favor escribe tu nombre</p>
                 </div>
                 <div>
                   <input
                     type="email"
                     name="correo"
+                    id="correo"
                     placeholder="Correo electrónico"
                   />
+                  <p class="error">Por favor escribe tu correo</p>
                 </div>
                 <div>
                   <textarea
                     name="mensaje"
+                    id="mensaje"
                     placeholder="Cuéntanos tu interés en afiliarte"
                   ></textarea>
+                  <p class="error">Por favor escribe tu mensaje</p>
                 </div>
                 <div>
                   <input type="submit" name="enviar" value="Enviar" />
@@ -378,6 +388,8 @@
     <script src="js/scrollSuave.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/validacion.js"></script>
+    <script src="js/menuMobile.js"></script>
     <!-- <script src="js/bgParallax.js"></script> -->
     <script src="js/parallax.min.js"></script>
     <script src="js/prefixfree.min.js"></script>
